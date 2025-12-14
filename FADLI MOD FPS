@@ -11,7 +11,7 @@ pcall(function()
     game:GetService("StarterGui"):SetCore("SendNotification", {
         Title = "POTATO MODE",
         Text = "FADLI MOD",
-        Duration = 10
+        Duration = 12
     })
 end)
 
@@ -100,10 +100,6 @@ local function destroyPotato(obj)
             obj.LevelOfDetail = 1
         end
         
-            if obj:IsA("MaterialVariant") then
-            obj:Destroy()
-        end
-
         if obj:IsA("FaceInstance") then
             obj.Transparency = 1
             obj.Shiny = 0
